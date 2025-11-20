@@ -12,7 +12,14 @@
 # WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 # See the License for the specific language governing permissions and
 # limitations under the License.
-# Used to generate top-level secrets (overridden by custom-values.yaml)
+# Hugging Face token secret (set create: true and provide stringData to generate via Helm)
+hfTokenSecret:
+  create: false
+  name: hf-token-secret
+  labels: {}
+  annotations: {}
+  type: Opaque
+  stringData: {}
 
 # Subcharts configuration
 
